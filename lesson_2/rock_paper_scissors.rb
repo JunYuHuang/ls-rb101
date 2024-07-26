@@ -14,11 +14,11 @@ BEATEN_BY = {
   'spock' => ['scissors', 'rock']
 }
 
-def is_valid_choice_shorthand?(choice)
+def valid_choice_shorthand?(choice)
   VALID_CHOICE_SHORTHANDS.keys().include?(choice)
 end
 
-def is_valid_choice?(choice)
+def valid_choice?(choice)
   return true if VALID_CHOICES.include?(choice)
   is_valid_choice_shorthand?(choice)
 end
@@ -45,7 +45,7 @@ def display_results(winner)
   end
 end
 
-def is_match_over?(win_count)
+def match_over?(win_count)
   win_count[:player] == 3 || win_count[:computer] == 3
 end
 
@@ -68,14 +68,14 @@ loop do
   win_count = {}
   new_match!(win_count)
 
-  until is_match_over?(win_count)
+  until match_over?(win_count)
     choice = ''
     loop do
       prompt("Choose one: #{VALID_CHOICES.join(', ')}")
       choice = Kernel.gets().chomp()
 
-      if is_valid_choice?(choice)
-        if is_valid_choice_shorthand?(choice)
+      if valid_choice?(choice)
+        if valid_choice_shorthand?(choice)
           choice = VALID_CHOICE_SHORTHANDS[choice]
         end
 
