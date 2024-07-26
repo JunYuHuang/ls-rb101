@@ -37,3 +37,9 @@ The following checklist is formatted as below:
 - [x] `Medium 1` 7
 - [x] `Medium 1` 8
 - [x] `Medium 1` 9
+- [x] `Medium 2` 1
+- [x] `Medium 2` 2
+- [x] `Medium 2` 3
+- [x] `Medium 2` 4
+- [x] `Medium 2` 5
+- [x] `Medium 2` 6
