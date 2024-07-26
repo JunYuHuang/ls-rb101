@@ -43,3 +43,7 @@ The following checklist is formatted as below:
 - [x] `Medium 2` 4
 - [x] `Medium 2` 5
 - [x] `Medium 2` 6
+- [x] `Hard 1` 1
+- [x] `Hard 1` 2
+- [x] `Hard 1` 3
+- [x] `Hard 1` 4
